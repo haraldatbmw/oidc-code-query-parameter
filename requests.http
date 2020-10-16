@@ -1,0 +1,14 @@
+### OK
+
+http://localhost:8080/hello
+X-Requested-With: XMLHttpRequest
+
+### OK
+
+http://localhost:8080/hello?test=abc
+X-Requested-With: XMLHttpRequest
+
+### NOT OK
+
+http://localhost:8080/hello?code=?abc
+X-Requested-With: XMLHttpRequest
